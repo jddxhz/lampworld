@@ -1,0 +1,111 @@
+.banner-container {
+  width: 100%;
+}
+.banner-container div {
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%;
+  background: url(../img/banner_1.jpg) center/100% no-repeat;
+}
+
+.list-container .background {
+  background-color: #fafafa;
+}
+.list-container .title-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8%;
+}
+.list-container .title-container .title {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 400;
+  color: #222;
+  text-align: center;
+}
+.list-container .title-container .subtitle {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  color: #999;
+  text-align: center;
+}
+.list-container .reverse {
+  flex-direction: row-reverse;
+}
+.list-container .article {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+.list-container .article .img-box {
+  flex: 5;
+}
+.list-container .article .img-box img {
+  display: block;
+  width: 60%;
+}
+.list-container .article .content {
+  flex: 5;
+  width: 100%;
+}
+.list-container .article .content .title {
+  padding: 5% 0;
+  width: 60%;
+  font-size: 28px;
+  font-weight: 400;
+  color: #222;
+}
+.list-container .article .content .subtitle {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+.list-container .article .left {
+  float: left;
+  margin-left: 5%;
+}
+.list-container .article .right {
+  float: right;
+  margin-right: 5%;
+}
+
+@media (max-width: 768px) {
+  .list-container .title-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8%;
+  }
+  .list-container .title-container .title {
+    font-size: 24px;
+  }
+  .list-container .title-container .subtitle {
+    font-size: 18px;
+  }
+  .list-container .reverse {
+    flex-direction: row;
+  }
+  .list-container .article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-container .article .content .title {
+    font-size: 18px;
+  }
+  .list-container .article .content .subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+  }
+  .list-container .article .left {
+    float: none;
+    margin: 0 auto;
+  }
+  .list-container .article .right {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=service.css.map */

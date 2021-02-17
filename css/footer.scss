@@ -1,0 +1,89 @@
+//foot-container 区域
+.foot-container{
+    width: 100%;
+    background-color: #222222;
+    color: #fff;
+    .part-1{
+        display: flex;
+        align-items: center;
+        .logo{
+            flex: 5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .img{
+                width: 50%;
+                height: 0;
+                margin-right: 20%;
+                padding-bottom: 20% ;
+                background: url(../img/logo.png) center/200px auto no-repeat;
+            }
+        }
+        .info{
+            flex: 5;
+            font-size: 14px;
+            line-height: 30px;
+            color: #ddd;
+            p{
+                padding-left: 8%;
+            }
+        }
+    }
+    .part-2{
+        p:nth-child(1){
+            text-align: center;
+            color: #ccc;
+        }
+        p:nth-child(2){
+            text-align: center;
+            color: #999;
+        }
+        p:nth-child(3){
+            text-align: center;
+            color: #999;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+    }
+    .font-size{
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px){
+    .foot-container{
+        width: 100%;
+        background-color: #222222;
+        color: #fff;
+        .part-1{
+            display: block;
+            align-items: center;
+            .logo{
+                flex: 5;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .img{
+                    width: 50%;
+                    height: 0;
+                    margin-right: 0;
+                    padding-bottom: 30% ;
+                    background: url(../img/logo.png) center/100% auto no-repeat;
+                }
+            }
+            .info{
+                flex: 5;
+                font-size: 12px;
+                line-height: 30px;
+                color: #ddd;
+                p{
+                    margin: 0;
+                    padding-left: 8%;
+                    
+                }
+            }
+        }
+        .font-size{
+            padding: 5%;
+        }
+    }
+}
